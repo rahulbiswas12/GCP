@@ -24,6 +24,8 @@ gcloud container clusters get-credentials nucleus-backend \
 kubectl create deployment hello-server \
           --image=gcr.io/google-samples/hello-app:2.0
 
+
+
 kubectl expose deployment hello-server \
           --type=LoadBalancer \
           --port 8080
